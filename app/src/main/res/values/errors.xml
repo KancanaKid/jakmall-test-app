@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_timeout">Your request has timed out. Please try again!</string>
+    <string name="error_unexpected">Unexpected Error</string>
+    <string name="error_no_internet">There is no Internet connection. Try again after ensuring connectivity</string>
+    <string name="error_api">There is API response Error</string>
+</resources>

@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.JakMallTestApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="toolbarStyle">@style/ToolbarSurface</item>
+        <item name="materialButtonStyle">@style/FilledButton</item>
+        <item name="materialButtonOutlinedStyle">@style/OutlinedButton</item>
+    </style>
+
+    <style name="FilledButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">@dimen/material_default_4dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="cornerRadius">@dimen/material_default_4dp</item>
+    </style>
+
+    <style name="ToolbarSurface" parent="Widget.MaterialComponents.Toolbar.Surface">
+        <item name="titleCentered">true</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MyTheme.ElevationOverlayDisabled</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTheme.ElevationOverlayDisabled" parent="">
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+    <style name="ToolbarTitle">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="titleTextAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/material_default_8dp"
+    android:layout_marginTop="@dimen/material_default_4dp"
+    android:background="@drawable/outline_grey_drawable"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        android:padding="@dimen/material_default_4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/material_default_24dp"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        android:padding="@dimen/material_default_4dp"
+        app:layout_constraintStart_toEndOf="@id/item_number_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Category Name"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_dropdown_iv"
+        android:layout_width="@dimen/material_default_24dp"
+        android:layout_height="@dimen/material_default_24dp"
+        android:src="@drawable/ic_chevron_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_number_tv"
+        app:layout_constraintBottom_toBottomOf="@id/item_number_tv"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_category_top_tv"
+        android:layout_width="@dimen/material_default_80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/material_default_24dp"
+        android:gravity="center"
+        android:background="@drawable/outline_text_drawable"
+        android:padding="@dimen/material_default_4dp"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        android:textColor="@color/primary_color"
+        app:layout_constraintEnd_toStartOf="@id/item_dropdown_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:text="@string/top_text"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_category_gotop_tv"
+        android:layout_width="@dimen/material_default_80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/material_default_24dp"
+        android:gravity="center"
+        android:background="@drawable/filled_drawable"
+        android:padding="@dimen/material_default_4dp"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/item_dropdown_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        android:text="@string/gotop_text" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/material_default_4dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/item_number_tv"/>
+
+   <!-- <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sub_category_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_default_8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/item_number_tv"
+        tools:listitem="@layout/sub_category_items"
+        android:visibility="gone"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

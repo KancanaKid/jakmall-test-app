@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="material_default_4dp">4dp</dimen>
+    <dimen name="material_default_8dp">8dp</dimen>
+    <dimen name="material_default_12dp">12dp</dimen>
+    <dimen name="material_default_16dp">16dp</dimen>
+    <dimen name="material_default_20dp">20dp</dimen>
+    <dimen name="material_default_24dp">24dp</dimen>
+    <dimen name="material_default_28dp">28dp</dimen>
+    <dimen name="material_default_32dp">32dp</dimen>
+    <dimen name="material_default_36dp">36dp</dimen>
+    <dimen name="material_default_40dp">40dp</dimen>
+    <dimen name="material_default_44dp">44dp</dimen>
+    <dimen name="material_default_48dp">48dp</dimen>
+    <dimen name="material_default_52dp">52dp</dimen>
+    <dimen name="material_default_56dp">56dp</dimen>
+    <dimen name="material_default_60dp">60dp</dimen>
+    <dimen name="material_default_64dp">64dp</dimen>
+    <dimen name="material_default_68dp">68dp</dimen>
+    <dimen name="material_default_72dp">72dp</dimen>
+    <dimen name="material_default_76dp">76dp</dimen>
+    <dimen name="material_default_80dp">80dp</dimen>
+    <dimen name="material_default_116dp">116dp</dimen>
+    <dimen name="material_default_248dp">248dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+</resources>
